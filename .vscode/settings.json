@@ -1,0 +1,14 @@
+{
+    "Lua.diagnostics.disable": [
+        
+    ],
+    "Lua.workspace.library": [
+        "/Users/cstudio/Library/Application Support/Code/User/globalStorage/sumneko.lua/addonManager/addons/love2d/module/library",
+        "/Users/cstudio/Library/Application Support/Code/User/globalStorage/sumneko.lua/addonManager/addons/love-nuklear/module/library"
+    ],
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.runtime.special": {
+        "love.filesystem.load": "loadfile"
+    },
+    "Lua.workspace.checkThirdParty": false
+}

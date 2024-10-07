@@ -562,3 +562,17 @@ function table.remove_object(t, c)
         return lume.remove(t, c)
     end
 end
+
+function table.getkey(t, o)
+    local key
+
+    for k, v in pairs(t) do
+        if o == v then
+            key = k
+
+            break
+        end
+    end
+
+    return key
+end

@@ -3,11 +3,12 @@ if arg[2] == "debug" then
     require("lldebugger").start()
 end
 
-_G.love = require('love')
-_G.lume = require('lib.lume')
-_G.mlib = require('lib.mlib')
-_G.utf8 = require('lib.utf8')
-_G.vec2 = require('lib.vector')
+_G.love         = require('love')
+_G.lume         = require('lib.lume')
+_G.mlib         = require('lib.mlib')
+_G.utf8         = require('lib.utf8')
+_G.vec2         = require('lib.vector')
+_G.class        = require('lib.middleclass')
 
 require('lib.class')
 require('lib.table')

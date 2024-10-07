@@ -50,8 +50,8 @@ for i, x in ipairs(modes) do
         if i < levels[log.level] then
             return
         end
-
-        local msg = tostring(...)
+        
+        local args = {...}
         local info = debug.getinfo(2, "Sl")
         local lineinfo = info.short_src .. ":" .. info.currentline
 
@@ -62,7 +62,9 @@ for i, x in ipairs(modes) do
             os.date("%H:%M:%S"),
             log.usecolor and "\27[0m" or "",
             lineinfo,
-            msg))
+            #args > 1 and string.format(...) or args[1]
+            )
+        )
 
         -- Output to log file
         if log.outfile then
